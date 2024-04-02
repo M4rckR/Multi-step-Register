@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.step-dots {
+    @apply flex gap-4
+}
+
+.dot {
+    @apply w-2.5 h-2.5 bg-m-l-gray rounded-full
+}
+
+.active {
+    @apply bg-m-morado
+}
+
+.info-active {
+    @apply bg-m-morado text-m-white
+}

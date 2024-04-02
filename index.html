@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-m-dark font-m-inter">
+
+  <div class="container mx-auto px-4 md:px-a flex flex-col items-center mt-20">
+    <section class="bg-m-l-dark border-m-l-gray border-[2.6px] rounded-xl py-6 px-10 md:py-10  md:px-12 md:w-[33rem]" id="card">
+      <h3 class="text-m-white text-2xl font-semibold">Register</h3>
+      <form class="flex flex-col gap-6 mt-10">
+        <div class="flex flex-col w-full">
+          <p class="text-m-white mb-1 text-sm">Name</p>
+          <input id="nombre" class="bg-m-l-dark border-[2.6px] border-m-l-gray rounded-xl py-3 outline-none pl-4 text-m-white placeholder:text-sm placeholder:text-m-l-gray" type="text" placeholder="enter you name">
+        </div>
+        <div class="flex flex-col w-full">
+          <p class="text-m-white mb-1 text-sm">Email</p>
+          <input id="correo" class="bg-m-l-dark border-[2.6px] border-m-l-gray rounded-xl py-3 outline-none pl-4 text-m-white placeholder:text-sm placeholder:text-m-l-gray" type="email" placeholder="example@gmail.com">
+        </div>
+        <a href="#" id="siguiente" class="mx-auto max-w-48 cursor-pointer bg-m-morado text-m-white py-3 px-12 mt-4 rounded-3xl text-sm transition-all duration-100 active:bg-m-l-morado text-center">Continue</a>
+      </form>
+    </section>
+    <div class="flex items-center gap-4 mt-4 -ml-24">
+      <p class="text-m-l-gray text-sm">Step <span id="step">1</span> of 3</p>
+      <div id="dots" class="step-dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/app.ts"></script>
+</body>
+</html>
